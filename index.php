@@ -1,6 +1,9 @@
 <?php
 include("Car.php");
+include("Train.php");
 
-// $myCar = new Car("Dacia");
-// $myCar2 = new Car("Apple Car");
 Car::makeNoise();
+Train::makeNoise();
+
+$train = new Train("Skoda");
+echo $train->getMileage();
